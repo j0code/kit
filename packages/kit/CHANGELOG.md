@@ -1,5 +1,20 @@
 # @sveltejs/kit
 
+## 2.57.2
+### Patch Changes
+
+
+- fix: allow `query().current`, `.error`, `.loading`, and `.ready` to work in non-reactive contexts ([#15699](https://github.com/sveltejs/kit/pull/15699))
+
+
+- fix: prevent `deep_set` crash on nullish nested values ([#15600](https://github.com/sveltejs/kit/pull/15600))
+
+
+- fix: restore correct `RemoteFormFields` typing for nullable array fields (e.g. when a schema uses `.default([])`), so `.as('checkbox')` and friends work again ([#15723](https://github.com/sveltejs/kit/pull/15723))
+
+
+- fix: avoid FOUC for CSR-only pages by loading styles and fonts before CSR starts ([#15718](https://github.com/sveltejs/kit/pull/15718))
+
 ## 2.57.1
 ### Patch Changes
 
